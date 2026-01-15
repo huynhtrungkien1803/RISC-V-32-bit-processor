@@ -1,0 +1,1 @@
+2 file op_sw_calc.hex và isa_4b.hex hiện tại đang cùng 1 nội dung, và op_sw_cal1.s là code assembly của chúng

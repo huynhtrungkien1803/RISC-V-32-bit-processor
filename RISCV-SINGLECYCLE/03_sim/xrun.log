@@ -1,0 +1,74 @@
+xrun(64): 24.09-s005: (c) Copyright 1995-2025 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	24.09-s005: Started on Nov 05, 2025 at 22:40:40 +07
+xrun
+	-access +rwc
+	-f ./flist
+		-sv
+		-timescale 1ns/100ps
+		./../01_bench/driver.sv
+		./../01_bench/scoreboard.sv
+		./../01_bench/tbench.sv
+		./../01_bench/tlib.svh
+		./../00_src/alu.sv
+		./../00_src/addsub32.sv
+		./../00_src/brc.sv
+		./../00_src/ctrl_unit.sv
+		./../00_src/imm_gen.sv
+		./../00_src/lsu.sv
+		./../00_src/instruction_memory.sv
+		./../00_src/memory.sv
+		./../00_src/regfile.sv
+		./../00_src/single_cycle.sv
+Loading snapshot worklib.tbench:sv .................... Done
+xcelium> source /home/yellow/ktmt_l01_l02_4/tools/eda/cadence/XCELIUM2409/tools/xcelium/files/xmsimrc
+xcelium> run
+[memory] Loading init file via `define: ./../02_test/isa_4b.hex
+
+SINGLE CYCLE - ISA test
+
+add......PASS
+addi.....PASS
+sub......PASS
+and......PASS
+andi.....PASS
+or.......PASS
+ori......PASS
+xor......PASS
+xori.....PASS
+slt......PASS
+slti.....PASS
+sltu.....PASS
+sltiu....PASS
+sll......PASS
+slli.....PASS
+srl......PASS
+srli.....PASS
+sra......PASS
+srai.....PASS
+lw.......PASS
+lh.......PASS
+lhu......PASS
+lb.......PASS
+lbu......PASS
+sw.......PASS
+sh.......PASS
+sb.......PASS
+auipc....PASS
+lui......PASS
+beq......PASS
+bne......PASS
+blt......PASS
+bltu.....PASS
+bge......PASS
+bgeu.....PASS
+jal......PASS
+jalr.....PASS
+malgn....PASS
+iosw.....PASS
+
+END of ISA test
+
+Simulation complete via $finish(1) at time 19398 NS + 1
+../01_bench/scoreboard.sv:33       $finish;
+xcelium> exit
+TOOL:	xrun(64)	24.09-s005: Exiting on Nov 05, 2025 at 22:40:41 +07  (total: 00:00:01)
